@@ -1,0 +1,27 @@
+:root {
+  --color-brand: #1c2028; /* header, footer */
+  --color-active: #ec0b43; /* active nav item, small highlights */
+  --color-action: #2271b1; /* primary buttons */
+  --color-text: #1c2028;
+  --color-text-muted: #5a5f66;
+  --color-bg: #f8f8f8;
+  --color-surface: #fff;
+  --color-surface-alt: #f1f1f1; /* table/control-bar header cells */
+  --color-border: #d3d2d8;
+  --color-on-brand: #fff;
+  --font-body: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+ 
+.site-header,
+.site-footer {
+  min-height: 3rem;
+  background: var(--color-brand);
+  color: var(--color-on-brand);
+}

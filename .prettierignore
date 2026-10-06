@@ -1,0 +1,4 @@
+views/partials/
+stylesheets/site-*.css
+node_modules/
+package-lock.json

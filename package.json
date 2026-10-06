@@ -1,0 +1,25 @@
+{
+  "name": "oseas26-eae-wrapper-webpage",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "lint:css": "stylelint \"stylesheets/**/*.css\"",
+    "lint:js": "eslint src bin",
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
+    "check": "npm run lint:css && npm run lint:js && npm run format:check && node bin/check-config.js",
+    "check:launch": "npm run check && node bin/check-config.js --strict",
+    "prepare": "simple-git-hooks"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npm run check",
+    "pre-push": "npm run check"
+  },
+  "devDependencies": {
+    "eslint": "^10.12.0",
+    "prettier": "^3.9.9",
+    "simple-git-hooks": "^2.14.0",
+    "stylelint": "^17.16.0",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}

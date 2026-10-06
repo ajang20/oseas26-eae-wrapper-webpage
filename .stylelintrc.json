@@ -1,0 +1,16 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "rules": {
+    "selector-class-pattern": "^explorer(__[a-z-]+)?(--[a-z-]+)?$",
+    "selector-max-id": 0,
+    "declaration-no-important": true,
+    "color-no-hex": true,
+    "max-nesting-depth": 2
+  },
+  "overrides": [
+    {
+      "files": ["stylesheets/template.css"],
+      "rules": { "color-no-hex": null, "selector-class-pattern": null }
+    }
+  ]
+}
